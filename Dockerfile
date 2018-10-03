@@ -1,6 +1,4 @@
 FROM python:3
-ADD _version.py /
 ADD __main__.py /
-RUN pip install bottle
-CMD [ "python", "./_version.py" ]
+pip install -r requirements.txt
 CMD [ "python", "./__main__.py" ]
