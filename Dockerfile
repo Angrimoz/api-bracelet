@@ -1,4 +1,4 @@
 FROM python:3
-ADD Code.py /
+ADD __main__.py /
 RUN pip install bottle
-CMD [ "python", "./Code.py" ]
+CMD [ "python", "./__main__.py" ]
